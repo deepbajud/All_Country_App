@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/worldmap"
+    tools:context=".MainActivity"
+    tools:ignore="MissingPrefix">
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:cardCornerRadius="15dp"
+       android:layout_margin="10dp"
+       app:cardElevation="10dp">
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@null"
+          android:hint="Search Any Country"
+          android:textStyle="italic"
+          android:padding="15dp"
+          tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+   </androidx.cardview.widget.CardView>
+
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/raccountry"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       tools:ignore="MissingConstraints" />
+
+</LinearLayout>
